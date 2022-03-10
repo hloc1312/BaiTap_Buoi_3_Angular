@@ -1,0 +1,18 @@
+<!-- <p>Chào {{name}}</p>
+
+<p>Tuổi của bạn là {{Age}}</p>
+
+<p *ngIf="Age < 18" class="underAge">Bạn dưới 18 tuổi</p>
+<p  *ngIf="Age > 18" class="overAge">Bạn trên 18 tuổi</p>
+
+<button class="btn btn-primary"
+[disabled]="!allowNewServer">Add new
+Server</button>
+
+<div *ngFor="let item of BranchCars">
+    <li>{{item}}</li>
+</div> -->
+<p>Chào bạn: {{name}}</p>
+
+<input [(ngModel)]="name" id="text-input" #reference />
+<button [disabled] ="name === ''" class="btn btn-primary" (click)="onResetText()">Reset Name</button>
